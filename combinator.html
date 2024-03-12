@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        div p {
+            color: red;
+        }
+        div > p {
+            background-color: yellow;
+        }
+        div + p {
+            background-color: darkgray;
+        }
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>div p: Selektor ini memilih semua elemen p yang berada di dalam sebuah elemen div.
+            Dalam konteks paragraf pertama dan kedua, mereka akan diubah warna teksnya menjadi merah karena mereka berada di dalam elemen div.
+        </p>
+        <p>div > p: Selektor ini memilih semua elemen p yang langsung menjadi anak dari sebuah elemen div.
+            Dalam konteks paragraf pertama dan kedua, mereka akan memiliki latar belakang warna kuning karena mereka langsung menjadi anak dari elemen div.
+        </p>
+    </div>
+    <p>div + p: Selektor ini memilih elemen p yang berada tepat setelah sebuah elemen div.
+        Dalam konteks halaman HTML tersebut, hanya paragraf ketiga yang akan memiliki latar belakang warna abu-abu karena hanya berada setelah elemen div.
+    </p>
+    <p>div ~ p: Selektor ini memilih semua elemen p yang berada setelah elemen div di dalam struktur dokumen HTML,
+        terlepas dari seberapa jauh. Dalam konteks halaman HTML tersebut, paragraf ketiga dan keempat akan memiliki warna teks cyan karena keduanya berada setelah elemen div.
+    </p>
+</body>
+</html>

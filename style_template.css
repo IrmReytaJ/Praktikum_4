@@ -1,0 +1,77 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #1207d5;
+	padding: 10px;
+	height: 80px;
+}
+
+/* CSS untuk h1 */
+header h1 {
+    color: yellow; /* Warna kuning */
+    margin: 0; /* Menghilangkan margin default */
+	font-weight: 300;/* Mengatur ketebalan font menjadi tipis */
+}
+
+/* CSS untuk span */
+header span {
+    color: white; /* Warna putih */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.menu-frame {
+	border: 2px dashed rgb(189,215,238); /* Bingkai dengan border dotted */
+	width: 150px;
+	height: 260px;
+	float: left;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column; /* Menjadikan menu vertikal */
+}
+
+.menu a {	text-decoration: none;	color: #000000;	padding: 5px 10px;	display: block; /* Membuat tautan mengambil ruang penuh di dalam menu */
+}
+
+.menu a:hover {	background-color: #f0f0f0;
+}
+
+/* Efek hover untuk tautan keenam */
+.menu a.hover-effect:hover { background-color: #1207d5; /* Ganti warna latar belakang saat dihover */	color: #fff; /* Ganti warna teks saat dihover */
+}
+
+main {
+	display: inline-block;
+	justify-content: center; /* Meletakkan elemen flexbox di tengah horizontal */
+	align-items: center; /* Meletakkan elemen flexbox di tengah vertikal */
+	flex-direction: column; /* Menjadikan tata letak vertikal */
+	text-align: center; /* Mengatur tulisan ke tengah */
+}
+
+main img {
+	margin: 0; /* Jarak antara gambar dan teks */
+	width: 100px;
+	height: 100px;
+}
+
+main h1 {
+	margin: 0; /* Jarak antara judul dan teks di bawahnya */
+}
+
+main p {
+	color: red; /* Warna teks merah */
+}
+
+footer {
+	background-color: lightblue;
+	color: black;
+	text-align: right;
+	padding: 10px;
+	margin-top: 40px;
+}
